@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+    <header class="text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>Developed by: Maria Rodriguez</div>
+            <div>
+                <a href="https://github.com/mariart-dev" target="_blank" class="mr-4">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://mariarodriguez-dev.web.app/" target="_blank" class="mr-4">
+                    <i class="fas fa-globe text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex justify-center items-center min-h-screen">
+        
+        <div class="w-full max-w-xl p-8 gradient-background">
+            <!-- Login Form -->
+            <div id="login-form-container" class="login-form-container relative">
+                <form id="login-form" class="space-y-4">
+                    <div class="relative">
+                        <img src="/static/background.png" alt="Registration" class="mx-auto mb-4 custom-border">
+                        <div class="shadow-overlay"></div>
+                        <h2 class="text-6xl font-bold text-gray-800 absolute left-0 top-1/2 transform -translate-y-1/2">Login</h2>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <input type="text" id="login-username" placeholder="Username or Email"
+                                class="block w-full px-4 py-2 border border-gray-300 rounded-md">
+                            <p id="login-username-error" class="text-red-500 text-xs mt-1"></p>
+                        </div>
+                        <div>
+                            <div class="password-container relative">
+                                <input type="password" id="login-password" placeholder="Password" class="block w-full px-4 py-2 border border-black rounded-md">
+                                <i class="far fa-eye-slash toggle-password text-gray-400"></i>
+                            </div>
+                            <p id="login-password-error" class="text-red-500 text-xs mt-1"></p>
+                        </div>  
+                    </div>
+                    <button id="login-button" type="button" class="block w-full px-4 py-2 text-black rounded-md transition duration-300 ease-in-out general-button">Login <i class="fa-solid fa-angles-right ml-2"></i></button>
+
+
+                    <div class="custom-line"></div>
+                    <div class="bg-gray-900 rounded-lg flex justify-between items-center py-4">
+                        <p class="text-center ml-4 text-gray-200 font-semibold">Don't have an account?</p>
+                        <button id="show-register" class="mr-5 px-5 py-2 ml-5 bg-gray-300 text-white rounded-full hover:bg-gray-200 transition duration-300 ease-in-out">
+                            <a href="#" class="text-gray-800">Sign up</a>
+                        </button>                                           
+                    </div>
+                </form>
+                <div id="loading-spinner" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden flex flex-col items-center">
+                    <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-800 h-20 w-20"></div>
+                    <p class="text-gray-900 mt-5">Loading user...</p>
+                </div>
+            </div>
+            <!-- Register Form -->
+            <div id="register-form-container" class="register-form-container relative">
+
+                <form id="register-form" class="hidden space-y-4">
+                    <div class="relative">
+                        <img src="/static/background.png" alt="Registration" class="mx-auto mb-4 custom-border">
+                        <div class="shadow-overlay"></div>
+                        <h2 class="text-6xl font-bold text-gray-800 absolute left-0 top-1/2 transform -translate-y-1/2">Register</h2>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2 text-gray-800">User</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <input type="text" id="register-username" placeholder="Username"
+                                class="block w-full px-4 py-2 border border-gray-800 rounded-lg mb-2">
+                        </div>
+                        <div>
+                            <input type="email" id="register-email" placeholder="Email"
+                                class="block w-full px-4 py-2 border border-gray-800 rounded-lg mb-2">
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2 text-gray-800">Password</h4>
+                    <div class="grid grid-cols-2 gap-4 mb-5">
+                        <div>
+                            <div class="password-container relative">
+                                <input type="password" id="register-password" placeholder="Password"
+                                    class="block w-full px-4 py-2 border border-gray-800 rounded-lg">
+                                <i class="far fa-eye-slash toggle-password text-gray-400"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="password-container relative mb-5">
+                                <input type="password" id="register-confirm-password" placeholder="Confirm Password"
+                                    class="block w-full px-4 py-2 border border-gray-800 rounded-lg">
+                                <i class="far fa-eye-slash toggle-password text-gray-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" id="register-button" class="block w-full mt-5 mb-5 px-4 py-2 text-black rounded-md transition duration-300 ease-in-out general-button">Register<i class="fa-solid fa-angles-right ml-2"></i></button>
+
+                    <div class="custom-line"></div>
+                    <p id="register-username-error" class="text-red-500 text-xs mt-1"></p>
+                    <p id="register-email-error" class="text-red-500 text-xs mt-1"></p>
+                    <p id="register-password-error" class="text-red-500 text-xs mt-1"></p>
+                    <p id="register-confirm-password-error" class="text-red-500 text-xs mt-1"></p>
+                    <div class="bg-gray-900 rounded-lg flex justify-between items-center py-4">
+                        <p class="text-center ml-4 text-gray-200 font-semibold">Already have an account?</p>
+                        <button id="show-login" class="mr-5 px-5 py-2 ml-5 bg-gray-300 text-white rounded-full hover:bg-gray-200 transition duration-300 ease-in-out">
+                            <a href="#" class="text-gray-800">Sign in</a>
+                        </button>                    
+                    </div>
+                </form>   
+                <div id="register-success" class="hidden flex flex-col items-center justify-center text-center">
+                    <div class="animate-ping inline-flex h-20 w-20 rounded-full mx-auto mb-4"></div>
+                    <div class="animate-ping absolute inline-flex h-20 w-20 rounded-full border-4 border-gray-200 mx-auto mb-4"></div>
+                    <div class="inline-flex rounded-full h-20 w-20 border-4 border-gray-500 mx-auto mb-4">
+                        <svg class="animate-bounce h-16 w-16 mx-auto my-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <p class="mt-4">Successful registration</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
+
