@@ -36,6 +36,7 @@ This is a frontend-only project. It does not have backend functionality to reque
 
 - [Maria Rodriguez](https://github.com/mariart-dev) - Full Stack Developer
 
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
