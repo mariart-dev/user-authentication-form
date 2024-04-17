@@ -2,8 +2,6 @@
 
 This is a simple login and registration page. It provides basic functionality for user authentication.
 
-![Preview](https://github.com/mariart-dev/LoginForm/blob/976a75aa43066a9ff5d97b346a2b05c77f660ba2/static/img/background.png)
-
 ## Features
 
 - **Login:** Users can log in using their username or email and password.
