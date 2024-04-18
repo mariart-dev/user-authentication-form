@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body class="justify-center items-center min-h-screen">
+
+    <header class="text-white py-4 md:py-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-0">
+            <div class="mb-4 md:mb-0 md:mr-4">Developed by: Maria Rodriguez</div>
+            <div class="flex items-center">
+                <a href="https://github.com/mariart-dev/user-authentication-form" target="_blank" class="mr-4">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://mariarodriguez-dev.web.app/" target="_blank">
+                    <i class="fas fa-globe text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+
+    <div class="flex justify-center items-center min-h-screen">
+        
+        <div class="w-full md:max-w-xl p-8 md:p-12 gradient-background shadow-md">
+
+            <!-- Login Form -->
+            <div id="login-form-container" class="login-form-container relative">
+                <form id="login-form" class="space-y-4">
+                    <div class="relative">
+                        <img src="/static/img/background.png" alt="Registration" class="mx-auto mb-4 custom-border">
+                        <div class="shadow-overlay"></div>
+                        <h2 class="text-6xl font-bold text-gray-800 absolute left-0 top-1/2 transform -translate-y-1/2">Login</h2>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <input type="text" id="login-username" placeholder="Username"
+                                class="block w-full px-4 py-2 border-gray-300 rounded-md border">
+                            <p id="login-username-error" class="text-red-500 text-xs mt-1"></p>
+                        </div>
+                        
+                        <div>                    
+                            <div class="password-container relative">
+                                <input type="password" id="login-password" placeholder="Password" class="block w-full px-4 py-2 border-gray-800 rounded-lg">
+                                <i id="toggle-password" class="fas fa-eye-slash absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer text-gray-500"></i>
+                            </div>
+                            
+                            <p id="login-password-error" class="text-red-500 text-xs mt-1"></p>
+                        </div> 
+
+                    </div>
+                    <button id="login-button" type="button" class="block w-full px-4 py-2 text-black rounded-md transition duration-300 ease-in-out general-button">Login <i class="fa-solid fa-angles-right ml-2"></i></button>
+
+
+                    <div class="custom-line"></div>
+                    <div class="bg-gray-900 rounded-lg flex justify-between items-center py-4">
+                        <p class="text-center ml-4 text-gray-200 font-semibold">Don't have an account?</p>
+                        <button id="show-register" class="mr-5 px-5 py-2 ml-5 bg-gray-300 text-white rounded-full hover:bg-gray-200 transition duration-300 ease-in-out">
+                            <a href="Register.html" class="text-gray-800">Sign up</a>
+                        </button>                                           
+                    </div>
+
+
+                </form>
+
+                <div id="loading-message" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden flex flex-col items-center">
+                    <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-800 h-20 w-20"></div>
+                    <p class="text-gray-900 mt-5">Loading user...</p>
+                </div> 
+                
+                <div id="welcome-message" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden flex flex-col items-center">
+                    <p class="text-gray-900 mt-5">Welcome, thank you for viewing my project. Feel free to contact me for any suggestions or questions. <br> I would appreciate if you give me the corresponding credits when using my code. You can return to the home page by clicking the button below.</p>
+                    <button id="logout-button" class="mt-5 general-button text-white px-4 py-2 rounded-md">Log Out</button>
+                </div>
+                
+                
+            </div>
+        
+        </div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="/js/Login.js"></script>
+
+</body>
+
+</html> 
