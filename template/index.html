@@ -17,25 +17,26 @@
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 
-<body>
+<body class="justify-center items-center min-h-screen">
 
-    <header class="text-white py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div>Developed by: Maria Rodriguez</div>
-            <div>
+    <header class="text-white py-4 md:py-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-0">
+            <div class="mb-4 md:mb-0 md:mr-4">Developed by: Maria Rodriguez</div>
+            <div class="flex items-center">
                 <a href="https://github.com/mariart-dev/user-authentication-form" target="_blank" class="mr-4">
                     <i class="fab fa-github text-xl"></i>
                 </a>
-                <a href="https://mariarodriguez-dev.web.app/" target="_blank" class="mr-4">
+                <a href="https://mariarodriguez-dev.web.app/" target="_blank">
                     <i class="fas fa-globe text-xl"></i>
                 </a>
             </div>
         </div>
     </header>
+    
 
     <div class="flex justify-center items-center min-h-screen">
         
-        <div class="w-full max-w-xl p-8 gradient-background">
+        <div class="w-full md:max-w-xl p-8 md:p-12 gradient-background shadow-md">
             <!-- Login Form -->
             <div id="login-form-container" class="login-form-container relative">
                 <form id="login-form" class="space-y-4">
