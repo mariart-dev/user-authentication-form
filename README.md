@@ -6,11 +6,15 @@ This project is a user authentication system. It enables users to register and s
 
 ### Registration Page
 
-![Register Page](https://github.com/mariart-dev/user-authentication-form/blob/a7e4ee24f2d7f0b7411466466349a97b7d4ea412/static/img/Register.png)
+![Register Page](https://github.com/mariart-dev/user-authentication-form/blob/0787a04e39236657e0222466ae55c343f8d468e5/public/static/img/Register.png)
 
 ### Login Page
 
-![Login Page](https://github.com/mariart-dev/user-authentication-form/blob/212a805f9f9f163d0217ee5e71baf12355e73c3c/static/img/Login.png)
+![Login Page](https://github.com/mariart-dev/user-authentication-form/blob/0787a04e39236657e0222466ae55c343f8d468e5/public/static/img/Login.png)
+
+### Colors
+
+![Colors](https://github.com/mariart-dev/user-authentication-form/blob/0787a04e39236657e0222466ae55c343f8d468e5/public/static/img/Colors.png)
 
 ## Technologies Used
 
@@ -21,12 +25,12 @@ This project is a user authentication system. It enables users to register and s
 
 ## Table of Contents
 
+- [Images](#images)
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
 - [License](#license)
-- [Images](#images)
 
 ## Description
 
