@@ -7,17 +7,54 @@
 
 /* General */
 header {
-    background-color: #e3bd98;
+    background-color: #ffbe98;
 }
 
 header i:hover {
-    color: #333;
+    color: #C4210A;
 }
 
 body {
-    background-color: #C7C4BB;
+    background-color:#ffe6d5;
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
+}
+
+#login-form h2 {
+    color: #440a06;
+}
+
+#register-form h2 {
+    color: #440a06;
+}
+
+#register-form h4 {
+    color: #7d1a11;
+}
+
+.question-section {
+    background-color: #440a06;
+}
+
+#show-register {
+    background-color: #fd713a;
+    color: #fff4ed;
+}
+
+#show-register:hover {
+    background-color: #fff4ed;
+    color: #fd713a;
+}
+
+#show-login {
+    background-color: #fd713a;
+    color: #fff4ed;
+
+}
+
+#show-login:hover {
+    background-color: #fff4ed;
+    color: #fd713a;
 }
 
 .custom-line {
@@ -35,7 +72,8 @@ body {
 }
 
 .gradient-background {
-    background: linear-gradient(315deg, rgba(178,172,160,1) 0%, rgba(219,213,199,1) 25%, rgba(230,226,216,1) 40%, rgba(240,232,217,1) 60%, rgba(253,245,232,1) 75%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(315deg, #ffe6d5 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+
     border-radius: 20px;
     box-shadow: 39px 34px 38px 3px rgba(0,0,0,0.75);
     -webkit-box-shadow: 39px 34px 38px 3px rgba(0,0,0,0.75);
@@ -78,26 +116,33 @@ body {
 
 /* border color input */
 .border {
+    border-color: #7d1a11;
     border-radius: 15px;
 }
 
 /* input placeholders */
 input::placeholder {
     font-weight: 100;
-    color: #999; 
+    color: #440a06; 
     font-style: italic; 
 }
 
 input {
-    background-color: #e0ded8;
+    background-color: #fff4ed;
 }
 
 .general-button {
-    background-color: #e3bd98;
+    color: #7d1a11;
+    background-color: #ffbe98;
+}
+
+#toggle-password,
+#toggle-confirm-password {
+    color: #C4210A;
 }
 
 .general-button:hover {
-    background-color: whitesmoke;
+    background-color: #ffe6d5;
 }
 
 .login-form-container {

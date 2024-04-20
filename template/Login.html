@@ -21,7 +21,9 @@
 
     <header class="text-white py-4 md:py-8">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-0">
-            <div class="mb-4 md:mb-0 md:mr-4">Developed by: Maria Rodriguez</div>
+            <div class="mb-4 md:mb-0 md:mr-4">Developed by: Maria Rodriguez. &#169; 2024</div>
+
+
             <div class="flex items-center">
                 <a href="https://github.com/mariart-dev/user-authentication-form" target="_blank" class="mr-4">
                     <i class="fab fa-github text-xl"></i>
@@ -44,7 +46,7 @@
                     <div class="relative">
                         <img src="/static/img/background.png" alt="Registration" class="mx-auto mb-4 custom-border">
                         <div class="shadow-overlay"></div>
-                        <h2 class="text-6xl font-bold text-gray-800 absolute left-0 top-1/2 transform -translate-y-1/2">Login</h2>
+                        <h2 class="text-6xl font-bold absolute left-0 top-1/2 transform -translate-y-1/2">Login</h2>
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div>
@@ -55,8 +57,8 @@
                         
                         <div>                    
                             <div class="password-container relative">
-                                <input type="password" id="login-password" placeholder="Password" class="block w-full px-4 py-2 border-gray-800 rounded-lg">
-                                <i id="toggle-password" class="fas fa-eye-slash absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer text-gray-500"></i>
+                                <input type="password" id="login-password" placeholder="Password" class="block w-full px-4 py-2 border rounded-lg">
+                                <i id="toggle-password" class="fas fa-eye-slash absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"></i>
                             </div>
                             
                             <p id="login-password-error" class="text-red-500 text-xs mt-1"></p>
@@ -67,10 +69,10 @@
 
 
                     <div class="custom-line"></div>
-                    <div class="bg-gray-900 rounded-lg flex justify-between items-center py-4">
+                    <div class="question-section rounded-lg flex justify-between items-center py-4">
                         <p class="text-center ml-4 text-gray-200 font-semibold">Don't have an account?</p>
-                        <button id="show-register" class="mr-5 px-5 py-2 ml-5 bg-gray-300 text-white rounded-full hover:bg-gray-200 transition duration-300 ease-in-out">
-                            <a href="Register.html" class="text-gray-800">Sign up</a>
+                        <button id="show-register" class="mr-5 px-5 py-2 ml-5 text-white rounded-full transition duration-300 ease-in-out">
+                            <a href="Register.html">Sign up</a>
                         </button>                                           
                     </div>
 
