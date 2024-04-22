@@ -14,7 +14,7 @@ This project is a user authentication system. It enables users to register and s
 
 ### Colors
 
-![Colors](https://github.com/mariart-dev/user-authentication-form/blob/0787a04e39236657e0222466ae55c343f8d468e5/public/static/img/Colors.png)
+![Colors](https://github.com/mariart-dev/user-authentication-form/blob/28f98e227769b41f2bd31a1ca8fb85a3c92d48c6/public/static/img/Colors.png)
 
 ## Technologies Used
 
